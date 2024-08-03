@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Suite">
+
+<!--    <test name = "test1">-->
+<!--        <classes>-->
+<!--            <class name = "com.t.suit.SuitConfig"/>-->
+<!--            <class name = "com.t.suit.LoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name = "test2">-->
+<!--        <classes>-->
+<!--            <class name = "com.t.suit.SuitConfig"/>-->
+<!--            <class name = "com.t.suit.PayTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="testGroup1">
+        <groups>
+            <run>
+                <include name="group2"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.t.suit.OnClassTest1"/>
+            <class name="com.t.suit.OnClassTest2"/>
+        </classes>
+    </test>
+
+</suite>
